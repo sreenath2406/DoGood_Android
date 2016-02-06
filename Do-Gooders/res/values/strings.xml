@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Do Good</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile_screen">Profile</string>
+    <string name="title_activity_splash_screen">Do Good</string>
+    <string name="title_activity_donation_page">Donate</string>
+    <string name="title_activity_detailed_item_view">Item Details</string>
+    <string name="title_activity_notifications_screen">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="empty_list">There are currently no items to display</string>
+</resources>

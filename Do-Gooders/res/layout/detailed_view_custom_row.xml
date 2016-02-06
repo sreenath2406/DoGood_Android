@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:paddingBottom="5dp"
+    android:layout_marginBottom="5dp" >
+    
+   <com.sms.do_gooders.RoundedImageView
+        android:id="@+id/itemImage"
+        android:layout_gravity="center"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/defaultitem" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemImage"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:lines="2"
+        android:textSize="19sp"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:text="TextView" />
+
+	<TextView
+	    android:id="@+id/itemDescription"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/itemImage"
+	    android:layout_below="@+id/itemName"
+	    android:layout_marginTop="4dp"
+	    android:layout_marginLeft="10dp"
+	    android:text=""
+	    android:maxLines="3"
+	    android:ellipsize="end"
+	    android:textColor="#000000"
+	    android:textSize="16sp" />
+
+</RelativeLayout>

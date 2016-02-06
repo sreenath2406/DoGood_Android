@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sms.dogooders.ItemPickUpScreen" >
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+       	android:textSize="18sp"
+        android:text="Enter Pick-up details" />
+    
+    
+    <EditText
+        android:id="@+id/pickDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pick Up Date"
+        android:imeOptions="actionNext"
+        android:focusableInTouchMode="false"
+        android:nextFocusDown="@+id/pickTime"
+        android:singleLine="true" >
+
+    </EditText>
+    
+
+    <EditText
+        android:id="@+id/pickTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickDate"
+        android:layout_marginTop="30dp"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pick Up Time"
+        android:singleLine="true" />
+    
+    
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickTime"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone Number"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Address"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/acceptDonate"
+        style="@drawable/custom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:padding="20dp"
+        android:text="Send" />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_name"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/title" >
+        
+     <RelativeLayout
+        android:id="@+id/imagelayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"	
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:background="@drawable/circle"
+        >
+   		 <com.sms.do_gooders.RoundedImageView
+     	   android:id="@+id/personimage"
+        	android:layout_width="150dp"
+        	android:layout_height="150dp"
+        	android:layout_centerHorizontal="true"
+        	android:src="@drawable/round"
+        	/>
+      </RelativeLayout>    
+     <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagelayout"
+		android:gravity="center"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/email"
+        android:hint="Enter Name"
+        android:textAlignment="center">
+
+    </EditText>
+    
+     <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/phonenumber"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="Enter Email"
+        android:textAlignment="center"
+        android:inputType="textPersonName" >
+    </EditText>
+   
+     
+     <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/address"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+        android:ems="10"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:hint="Enter Phone Number"
+        android:textAlignment="center"
+        android:inputType="number" >
+    </EditText>
+    
+     
+      <EditText
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="Enter Address"
+        android:textAlignment="center"
+         >
+        
+          
+    </EditText>
+    <RelativeLayout 
+         android:layout_width="match_parent"
+    	 android:layout_height="match_parent"
+    	 android:layout_marginTop="5dp"
+    	 android:id="@+id/llayout"
+    	 android:layout_below="@+id/address">
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_margin="10dp"
+      	android:layout_toLeftOf="@+id/save"
+      	android:layout_alignParentLeft="true"
+        android:background="@drawable/custom_button"
+        android:text="Cancel" />
+    
+      <TextView
+        android:id="@+id/centerPoint"
+        android:text=""
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    
+      <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Save" />
+      </RelativeLayout>
+    </RelativeLayout>
+
+    
+</RelativeLayout>
+
+</ScrollView>

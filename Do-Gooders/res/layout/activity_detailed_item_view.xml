@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sms.dogooders.DetailedItemView" >
+
+    <com.sms.do_gooders.RoundedImageView
+        android:id="@+id/personimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/defaultitem" />
+
+    <View
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/personimage"
+        android:background="#4eabab"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip" />
+
+    <LinearLayout
+        android:id="@+id/organizations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/orgTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Charity Orgs"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/organizationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:text="@string/empty_list"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemDescription"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/personimage"
+        android:text="Item Name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/personimage"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/personimage"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Description"
+        android:textSize="12sp" />
+
+</RelativeLayout>
